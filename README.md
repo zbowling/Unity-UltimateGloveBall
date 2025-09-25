@@ -81,8 +81,8 @@ More information is available in the [Documentation](./Documentation) section.
 Custom Packages:
 
 - [Meta Multiplayer for Netcode and Photon](./Packages/com.meta.multiplayer.netcode-photon/README.md)
-- [Meta Utilities](./Packages/com.meta.utilities/README.md)
-- [Meta Input Utilities](./Packages/com.meta.utilities.input/README.md)
+- [Meta Utilities](https://github.com/meta-quest/Unity-UtilityPackages/blob/main/com.meta.utilities/README.md)
+- [Meta Input Utilities](https://github.com/meta-quest/Unity-UtilityPackages/blob/main/com.meta.utilities.input/README.md)
 
 # Where are the Meta Avatar SDK and Photon Packages?
 
