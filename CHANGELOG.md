@@ -1,12 +1,15 @@
 # Change Log
 
+## November 7, 2025
+* Update to Unity 6000.0.59f2
+
 ## April 29, 2025
 * Update to Unity 2022.3.52f1
 * Update to SDK v72
 * Update to Avatar SDK v33 (Avatar Style 2)
 	* Integrate Leg movement
 	* Apply Avatar Custom FX to the Style 2 Avatars
-* Firends List Loading indicator
+* Friends List Loading indicator
 * Friends List scrolling with Thumbstick
 
 

@@ -62,7 +62,7 @@ MonoBehaviour:
 
 
     - <a href="https://unity.com/download">Unity</a>
-    6000.0.50f1 or newer
+    6000.0.59f2 or newer
 
     - <a href="https://github.com/AlexeyPerov/Unity-Dependencies-Hunter.git#upm">Dependencies
     Hunter</a>
@@ -131,10 +131,10 @@ MonoBehaviour:
     - <a href="./Packages/com.meta.multiplayer.netcode-photon/README.md">Meta
     Multiplayer for Netcode and Photon</a>
 
-    - <a href="./Packages/com.meta.utilities/README.md">Meta
+    - <a href="https://github.com/meta-quest/Unity-UtilityPackages/blob/main/com.meta.utilities/README.md">Meta
     Utilities</a>
 
-    - <a href="./Packages/com.meta.utilities.input/README.md">Meta
+    - <a href="https://github.com/meta-quest/Unity-UtilityPackages/blob/main/com.meta.utilities.input/README.md">Meta
     Input Utilities</a>
 
 
