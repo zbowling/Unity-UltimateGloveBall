@@ -65,7 +65,16 @@ namespace UltimateGloveBall.App
             PlayerPresenceHandler = new PlayerPresenceHandler();
             yield return PlayerPresenceHandler.Init();
 #if !UNITY_EDITOR && !UNITY_STANDALONE_WIN
-            yield return new WaitUntil(() => !string.IsNullOrWhiteSpace(LocalPlayerState.Username));
+            if (!Core.IsInitialized())
+            {
+                Debug.LogError("Platform features are disabled. The app might not work as expected");
+                LocalPlayerState.Init($"TestUser-{Random.Range(0, 100)}", (ulong)Random.Range(0, 100000));
+                m_launchType = LaunchType.Normal;
+            }
+            else
+            {
+                yield return new WaitUntil(() => !string.IsNullOrWhiteSpace(LocalPlayerState.Username));
+            }
 #else
             m_launchType = LaunchType.Normal;
 #endif

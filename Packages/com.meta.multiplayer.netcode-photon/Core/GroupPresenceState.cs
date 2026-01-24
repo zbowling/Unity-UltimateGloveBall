@@ -25,7 +25,14 @@ namespace Meta.Multiplayer.Core
         public IEnumerator Set(string dest, string lobbyID, string matchID, bool joinable)
         {
 #if !UNITY_EDITOR && !UNITY_STANDALONE_WIN
-            return Impl().ToRoutine();
+            if (!Oculus.Platform.Core.IsInitialized())
+            {
+                OnSetComplete();
+                yield break;
+            }
+
+
+            yield return Impl().ToRoutine();
             
             async Task Impl()
             {

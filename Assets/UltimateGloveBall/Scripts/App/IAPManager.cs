@@ -66,7 +66,7 @@ namespace UltimateGloveBall.App
         /// </summary>
         public void FetchProducts(string[] skus, string category = null)
         {
-            _ = IAP.GetProductsBySKU(skus).OnComplete(message =>
+            _ = IAP.GetProductsBySKU(skus)?.OnComplete(message =>
             {
                 GetProductsBySKUCallback(message, category);
             });
@@ -77,7 +77,7 @@ namespace UltimateGloveBall.App
         /// </summary>
         public void FetchPurchases()
         {
-            _ = IAP.GetViewerPurchases().OnComplete(GetViewerPurchasesCallback);
+            _ = IAP.GetViewerPurchases()?.OnComplete(GetViewerPurchasesCallback);
         }
 
         public List<string> GetProductSkusForCategory(string category)

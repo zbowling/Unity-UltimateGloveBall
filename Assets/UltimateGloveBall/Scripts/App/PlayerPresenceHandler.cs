@@ -28,8 +28,12 @@ namespace UltimateGloveBall.App
 
         public IEnumerator Init()
         {
-            _ = RichPresence.GetDestinations().OnComplete(OnGetDestinations);
-            yield return new WaitUntil(() => m_destinationReceived);
+            var getDest = RichPresence.GetDestinations();
+            if (getDest != null)
+            {
+                _ = getDest.OnComplete(OnGetDestinations);
+                yield return new WaitUntil(() => m_destinationReceived);
+            }
         }
 
         public IEnumerator GenerateNewGroupPresence(string dest, string roomName = null)
